@@ -1,0 +1,11 @@
+tqdm
+pathlib2
+itertools-collections
+cv2
+einops
+numpy
+remotezip
+seaborn
+matplotlib
+tensorflow==2.15.0
+keras
