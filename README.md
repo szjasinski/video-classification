@@ -11,10 +11,14 @@ Projekt dotyczy klasyfikacji materiałów wideo (action recognition) z podzbioru
 - BaseballPitch
 - BasketballDunk
 
-Model wykorzystuje konwolucje 3D i osiąga accuracy około 70% na zbiorze testowym. Model jest zaimplementowany przy użyciu Tensorflow.
+Model wykorzystuje konwolucje 3D i osiąga accuracy około 70% na zbiorze testowym. Jest zaimplementowany przy użyciu Tensorflow.
 
 ## Uruchomienie
-Wystarczy sklonować repozytorium, zainstalować biblioteki z requirements.txt (istotne jest wykorzystanie tensorflow 2.15.0, ponieważ dla wersji 2.16.1 pojawiają się błędy w warstwie Flatten()), a następnie uruchomić main.py. Z wykorzystaniem GPU model powinien trenować się w ciągu kilkunastu minut.
+Wystarczy sklonować repozytorium, zainstalować biblioteki z requirements.txt, a następnie uruchomić main.py. 
+
+Istotne jest wykorzystanie tensorflow 2.15.0, ponieważ dla wersji 2.16.1 pojawiają się błędy w warstwie Flatten(). W razie błędu o niemożliwości utworzenia pliku, który już istnieje wystarczy usunąć folder UCF101_subset, gdyż DataLoader automatyzuje pobieranie danych.
+
+Z wykorzystaniem GPU model powinien trenować się w ciągu kilkunastu minut.
 
 ## Funkcjonalności
 W celu zachowania klarowności struktury kodu zaimplementowano następujące klasy:
